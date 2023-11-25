@@ -2,6 +2,29 @@ import React from "react";
 import "./Header.css";
 import { Container } from "reactstrap";
 
+const navLinks = [
+  {
+    disply: "Home",
+    url: "#",
+  },
+  {
+    disply: "About",
+    url: "#",
+  },
+  {
+    disply: "Menu",
+    url: "#",
+  },
+  {
+    disply: "Recipes",
+    url: "#",
+  },
+  {
+    disply: "Contacts",
+    url: "#",
+  },
+];
+
 export default function Header() {
   return (
     <header className="header">
@@ -17,21 +40,11 @@ export default function Header() {
           </div>
           <div className="nav_menu">
             <ul className="nav_list">
-              <li className="nav_item">
-                <a href="#">Home</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">About</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Menu</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Recipes</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Contacts</a>
-              </li>
+              {navLinks.map((item, index) => (
+                <li className="nav_item" key={index}>
+                  <a href={item.url}>{item.disply}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="menu_right">
