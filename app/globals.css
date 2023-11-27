@@ -12,7 +12,7 @@
 @tailwind utilities;
 
 * {
-  margin: 0;
+  margin: 100px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -20,6 +20,7 @@
 body,
 html {
   background: #0a071a;
+
 }
 
 section,
