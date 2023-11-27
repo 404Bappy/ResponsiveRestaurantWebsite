@@ -1,5 +1,11 @@
-import Image from "next/image";
+import Header from "./SRC/Components/Header/Header";
+import Home from "./SRC/Pages/Home";
+import "remixicon/fonts/remixicon.css";
 
-export default function Home() {
-  return <h1 className="text-bold text-teal-500">Hello World</h1>;
+export default function Page() {
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
