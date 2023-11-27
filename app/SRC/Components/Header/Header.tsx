@@ -31,11 +31,11 @@ export default function Header() {
       <Container>
         <div className="navigation">
           <div className="logo">
-            <h2>
+            <h2 className="d-flex align-items-center gap-10">
               <span>
                 <i className="ri-restaurant-2-line"></i>
               </span>
-              Bappy Bhai
+              Chef Food
             </h2>
           </div>
           <div className="nav_menu">
