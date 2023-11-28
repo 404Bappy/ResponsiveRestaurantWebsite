@@ -55,10 +55,13 @@
   cursor: pointer;
 }
 .mobile_menu span i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .mobile_menu {
   display: none;
+}
+.active_menu {
+  display: block;
 }
 
 /* ============================== Making it Responsive =========================== */
@@ -108,5 +111,8 @@
   }
   .mobile_menu {
     display: block;
+  }
+  .logo h2 {
+    font-size: 1.5rem;
   }
 }

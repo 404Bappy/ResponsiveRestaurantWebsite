@@ -39,13 +39,15 @@ export default function Header() {
             </h2>
           </div>
           <div className="nav_menu">
-            <ul className="nav_list">
-              {navLinks.map((item, index) => (
-                <li className="nav_item" key={index}>
-                  <a href={item.url}>{item.disply}</a>
-                </li>
-              ))}
-            </ul>
+            <div className="nav_list_wrapper d-flex align-items-center gap-5">
+              <ul className="nav_list">
+                {navLinks.map((item, index) => (
+                  <li className="nav_item" key={index}>
+                    <a href={item.url}>{item.disply}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="menu_right">
             <div className="custom_search">
